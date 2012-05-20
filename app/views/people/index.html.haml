@@ -1,0 +1,27 @@
+%h1 Listing people
+
+%table
+  %tr
+    %th Name
+    %th Paid every
+    %th Paid interval
+    %th Paid start
+    %th Typical payment
+    %th
+    %th
+    %th
+
+  - @people.each do |person|
+    %tr
+      %td= person.full_name
+      %td= person.paid_every
+      %td= person.paid_interval
+      %td= person.paid_start
+      %td= person.typical_payment
+      %td= link_to 'Show', person
+      %td= link_to 'Edit', edit_person_path(person)
+      %td= link_to 'Destroy', person, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Person', new_person_path

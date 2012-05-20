@@ -1,0 +1,24 @@
+%p#notice= notice
+
+%p
+  %b First name:
+  = @person.first_name
+%p
+  %b Last name:
+  = @person.last_name
+%p
+  %b Paid every:
+  = @person.paid_every
+%p
+  %b Paid interval:
+  = @person.paid_interval
+%p
+  %b Paid start:
+  = @person.paid_start
+%p
+  %b Typical payment:
+  = @person.typical_payment
+
+= link_to 'Edit', edit_person_path(@person)
+\|
+= link_to 'Back', people_path
