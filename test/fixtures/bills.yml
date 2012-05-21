@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  group_name: MyString
+  bill_name: MyString
+  due_day: 1
+  avg_bill: 9.99
+
+two:
+  group_name: MyString
+  bill_name: MyString
+  due_day: 1
+  avg_bill: 9.99

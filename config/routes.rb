@@ -1,4 +1,6 @@
 Homecal::Application.routes.draw do
+  resources :bills
+
   resources :people
 
   # The priority is based upon order of creation:

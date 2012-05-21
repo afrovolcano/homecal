@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b Group name:
+  = @bill.group_name
+%p
+  %b Bill name:
+  = @bill.bill_name
+%p
+  %b Due day:
+  = @bill.due_day
+%p
+  %b Avg bill:
+  = @bill.avg_bill
+
+= link_to 'Edit', edit_bill_path(@bill)
+\|
+= link_to 'Back', bills_path

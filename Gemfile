@@ -9,6 +9,9 @@ gem 'validates_timeliness', '~> 3.0.2'
 
 gem 'mysql2'
 
+gem 'execjs'
+gem 'therubyracer', :platforms => :ruby
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -29,7 +32,7 @@ gem 'jquery-rails'
 # gem 'capistrano'
 
 # To use debugger
-gem 'ruby-debug19', :require => 'ruby-debug'
+#gem 'ruby-debug19', :require => 'ruby-debug'
 
 group :test do
   # Pretty printed test output
